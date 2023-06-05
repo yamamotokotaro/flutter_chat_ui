@@ -47,20 +47,20 @@ class Input extends StatefulWidget {
 class _InputState extends State<Input> {
   late final _inputFocusNode = FocusNode(
     onKeyEvent: (node, event) {
-      // if (event.physicalKey == PhysicalKeyboardKey.enter &&
-      //     !HardwareKeyboard.instance.physicalKeysPressed.any(
-      //       (el) => <PhysicalKeyboardKey>{
-      //         PhysicalKeyboardKey.shiftLeft,
-      //         PhysicalKeyboardKey.shiftRight,
-      //       }.contains(el),
-      //     )) {
-      //   if (event is KeyDownEvent) {
-      //     // _handleSendPressed();
-      //   }
-      //   return KeyEventResult.handled;
-      // } else {
-      return KeyEventResult.ignored;
-      // }
+      if (event.physicalKey == PhysicalKeyboardKey.enter &&
+          HardwareKeyboard.instance.physicalKeysPressed.any(
+            (el) => <PhysicalKeyboardKey>{
+              PhysicalKeyboardKey.controlLeft,
+              PhysicalKeyboardKey.controlRight,
+            }.contains(el),
+          )) {
+        if (event is KeyDownEvent) {
+          _handleSendPressed();
+        }
+        return KeyEventResult.handled;
+      } else {
+        return KeyEventResult.ignored;
+      }
     },
   );
 
