@@ -55,7 +55,7 @@ class _InputState extends State<Input> {
             }.contains(el),
           )) {
         if (event is KeyDownEvent) {
-          _handleSendPressed();
+          // _handleSendPressed();
         }
         return KeyEventResult.handled;
       } else {
@@ -84,7 +84,7 @@ class _InputState extends State<Input> {
     } else if (widget.options.sendButtonVisibilityMode ==
         SendButtonVisibilityMode.editing) {
       _sendButtonVisible = _textController.text.trim() != '';
-      _textController.addListener(_handleTextControllerChange);
+      // _textController.addListener(_handleTextControllerChange);
     } else {
       _sendButtonVisible = true;
     }
