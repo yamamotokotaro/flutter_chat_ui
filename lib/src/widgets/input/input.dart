@@ -59,7 +59,7 @@ class _InputState extends State<Input> {
       //   }
       //   return KeyEventResult.handled;
       // } else {
-      //   return KeyEventResult.ignored;
+      return KeyEventResult.ignored;
       // }
     },
   );
