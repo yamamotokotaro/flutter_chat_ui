@@ -64,7 +64,7 @@ class _InputState extends State<Input> {
     },
   );
 
-  bool _sendButtonVisible = false;
+  bool _sendButtonVisible = true;
   late TextEditingController _textController;
 
   @override
