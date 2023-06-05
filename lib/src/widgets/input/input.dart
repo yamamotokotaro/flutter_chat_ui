@@ -82,13 +82,13 @@ class _InputState extends State<Input> {
     _textController.removeListener(_handleTextControllerChange);
     if (widget.options.sendButtonVisibilityMode ==
         SendButtonVisibilityMode.hidden) {
-      _sendButtonVisible = false;
+      // _sendButtonVisible = false;
     } else if (widget.options.sendButtonVisibilityMode ==
         SendButtonVisibilityMode.editing) {
-      _sendButtonVisible = _textController.text.trim() != '';
+      // _sendButtonVisible = _textController.text.trim() != '';
       // _textController.addListener(_handleTextControllerChange);
     } else {
-      _sendButtonVisible = true;
+      // _sendButtonVisible = true;
     }
   }
 
