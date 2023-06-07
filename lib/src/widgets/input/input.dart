@@ -169,22 +169,22 @@ class _InputState extends State<Input> {
                       cursorColor: InheritedChatTheme.of(context)
                           .theme
                           .inputTextCursorColor,
-                      decoration: InheritedChatTheme.of(context)
-                          .theme
-                          .inputTextDecoration
-                          .copyWith(
-                            hintStyle: InheritedChatTheme.of(context)
-                                .theme
-                                .inputTextStyle
-                                .copyWith(
-                                  color: InheritedChatTheme.of(context)
-                                      .theme
-                                      .inputTextColor
-                                      .withOpacity(0.5),
-                                ),
-                            hintText:
-                                InheritedL10n.of(context).l10n.inputPlaceholder,
-                          ),
+                      // decoration: InheritedChatTheme.of(context)
+                      //     .theme
+                      //     .inputTextDecoration
+                      //     .copyWith(
+                      //       hintStyle: InheritedChatTheme.of(context)
+                      //           .theme
+                      //           .inputTextStyle
+                      //           .copyWith(
+                      //             color: InheritedChatTheme.of(context)
+                      //                 .theme
+                      //                 .inputTextColor
+                      //                 .withOpacity(0.5),
+                      //           ),
+                      //       hintText:
+                      //           InheritedL10n.of(context).l10n.inputPlaceholder,
+                      //     ),
                       focusNode: _inputFocusNode,
                       keyboardType: widget.options.keyboardType,
                       maxLines: 5,
