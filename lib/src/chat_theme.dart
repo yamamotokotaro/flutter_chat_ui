@@ -331,7 +331,7 @@ class DefaultChatTheme extends ChatTheme {
     super.inputTextColor = neutral7,
     super.inputTextCursorColor,
     super.inputTextDecoration = const InputDecoration(
-      border: InputBorder.none,
+      // border: InputBorder.none,
       contentPadding: EdgeInsets.zero,
       isCollapsed: true,
     ),
@@ -500,7 +500,7 @@ class DarkChatTheme extends ChatTheme {
     super.inputTextColor = neutral7,
     super.inputTextCursorColor,
     super.inputTextDecoration = const InputDecoration(
-      border: InputBorder.none,
+      // border: InputBorder.none,
       contentPadding: EdgeInsets.zero,
       isCollapsed: true,
     ),
